@@ -1,4 +1,4 @@
-# data visualization
+# data visualization -- 绘制折线图
 import matplotlib.pyplot as plt
 
 # 输入值
