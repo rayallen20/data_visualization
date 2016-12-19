@@ -12,7 +12,10 @@ y_values = [x**2 for x in x_values]
 # edgecolors = 'none' 删除数据点的边缘那圈黑色
 # c=(红, 绿, 蓝) 其中 每个值均为0~1之间的小数值
 # 或 c='red' 直接指定颜色
-plt.scatter(x_values, y_values, c=(0, 0, 0.8), edgecolors='none', s=40)
+# 颜色映射: 从起始颜色渐变到结束颜色 其中
+# c值为一个list 需要制指定 cmap参数 示例如下
+# 具体的颜色映射 http://matplotlib.org/ ->Examples ->Color Examples ->colormaps_reference
+plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, edgecolors='none', s=40)
 
 # 设置图表标题 并给坐标轴加上标签
 
