@@ -17,6 +17,11 @@ while True:
     # c 和 cmap两个参数同时出现时 c为一个list 其中 值较小的 颜色较浅 值较大的 颜色较深
     plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues,
                 edgecolors='none', s=15)
+
+    # 着重绘制起点和终点
+    plt.scatter(0, 0, c='green', edgecolors='none', s=100)
+    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
+
     plt.show()
 
     keep_running = input('Make another walk? (y/n): ')
