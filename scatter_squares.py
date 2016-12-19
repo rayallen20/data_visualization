@@ -34,6 +34,9 @@ plt.tick_params(axis='both', which='major',  labelsize=14)
 # 设置坐标轴的取值范围
 plt.axis([0, 1100, 0, 1100000])
 
+# 自动保存图表
+plt.savefig('squares_plot.png', bbox_inches='tight')
+
 plt.show()
 
 """
@@ -46,4 +49,9 @@ scatter(所有点的X坐标值list, 所有点的Y坐标值list, s=num) 在坐标
 
 """
 axis(X轴最小值, x轴最大值, y轴最小值, y轴最大值)
+"""
+
+"""
+savefig('文件名',bbox_inches='tight') 其中 第二个参数设置为tight 表示 将图表中多余的空白区域裁减掉
+如果不设置这个参数 将保留图表中的空白区域
 """
