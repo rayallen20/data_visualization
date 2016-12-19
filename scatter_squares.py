@@ -9,7 +9,10 @@ x_values = list(range(1, 1001))
 y_values = [x**2 for x in x_values]
 
 # s=200 设置点的尺寸大小
-plt.scatter(x_values, y_values, s=200)
+# edgecolors = 'none' 删除数据点的边缘那圈黑色
+# c=(红, 绿, 蓝) 其中 每个值均为0~1之间的小数值
+# 或 c='red' 直接指定颜色
+plt.scatter(x_values, y_values, c=(0, 0, 0.8), edgecolors='none', s=40)
 
 # 设置图表标题 并给坐标轴加上标签
 
