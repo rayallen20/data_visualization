@@ -9,6 +9,10 @@ while True:
     rw = RandomWalk(50000)
     rw.fill_walk()
 
+    # 调整图表尺寸大小
+    # 其中 dpi 为屏幕分辨率 figsize(水平方向X英寸, 垂直方向Y英寸)
+    plt.figure(dpi=128, figsize=(10, 6))
+
     # 颜色映射 start
     point_numbers = list(range(rw.num_points))
     # 颜色映射 end
